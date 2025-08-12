@@ -1,0 +1,495 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.header {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    background-color: white;
+    height: 8vh;
+    width: 100%;
+}
+
+.title {
+    font-size: 35px;
+    margin-left: 5vh;
+    color: rgb(8, 7, 7);
+    margin-right: 20px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.title:hover {
+    transition: 0.3s ease;
+    color: #00704A;
+}
+
+.title2 {
+    font-size: 25px;
+    color: rgb(3, 3, 3);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.title2:hover {
+    color: #00704A;
+    transition: 0.3s ease;
+}
+
+.menu {
+    margin-left: auto;
+    display: flex;
+    gap: 30px;
+    margin-right: 5vh;
+}
+
+.dados {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 40%;
+    height: auto;
+    background-color: white;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.container1 {
+    cursor: default;
+    margin-left: 20vh;
+    margin-top: 10vh;
+    height: 25vh;
+    width: 40vh;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    background-color: rgb(236, 255, 252);
+    transition: 0.3s ease;
+}
+
+.container1:hover {
+    transition: 0.3s ease;
+    transform: scale(1.05);
+}
+
+.sobreeu {
+    font-size: 45px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.eu {
+    padding-left: 10px;
+    cursor: default;
+}
+
+.nome {
+    font-size: 60px;
+    color: #00704A;
+}
+
+a {
+    text-decoration: none;
+}
+
+.botoes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20.5vh;
+    margin-top: 10px;
+    width: 23vh;
+    height: 7vh;
+}
+
+.botao1 {
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    background-color: #00704A;
+    border-radius: 15px;
+    width: 10vh;
+    height: 4vh;
+    transition: 0.3s ease;
+    border: none;
+}
+
+.botao1:hover {
+    transform: scale(0.9);
+    transition: 0.3s ease;
+}
+
+.botao2 {
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(240, 234, 228);
+    border-radius: 15px;
+    width: 10vh;
+    height: 4vh;
+    transition: 0.3s ease;
+    border: none;
+}
+
+.botao2:hover {
+    transition: 0.3s ease;
+    transform: scale(0.9);
+}
+
+.teste {
+    width: 90vh;
+    height: 30vh;
+}
+
+.cor98 {
+    color: black;
+}
+
+.cor99 {
+    color: aliceblue;
+}
+
+.p1 {
+    font-size: 19px;
+    transition: 0.3s ease;
+}
+
+.p1:hover {
+    font-size: 19px;
+    color: #00704A;
+    transition: 0.3s ease;
+}
+
+.p2 {
+    font-size: 19px;
+    transition: 0.3s ease;
+}
+
+.p2:hover {
+    font-size: 19px;
+    color: rgb(196, 10, 196);
+    transition: 0.3s ease;
+
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    height: 92vh;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.container3 {
+    margin-top: 10vh;
+    border-radius: 40px;
+    height: 80vh;
+    width: auto;
+    transition: 0.3s ease;
+}
+
+.ilustracao {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+
+/* sec2 */
+
+.sec2 {
+    justify-content: left;
+    height: 90vh;
+}
+
+.cor {
+    font-size: 50px;
+    margin-left: 20vh;
+    color: #00704A;
+}
+
+.projetos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    margin-top: 5vh;
+}
+
+.ps {
+    overflow: hidden;
+    width: 29%;
+    height: auto;
+    border-radius: 25px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease;
+}
+
+.ps:hover {
+    transition: 0.3s ease;
+    transform: scale(1.01);
+}
+
+.fotopro {
+    border-radius: 25px;
+    border: #00704A solid 2px;
+    width: 99%;
+    height: auto;
+}
+
+.corp {
+    margin-left: 2vh;
+    color: #00704A;
+    font-size: 30px;
+}
+
+
+/* sec */
+
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+}
+
+.curriculo {
+    display: flex;
+    background-color: #d5feff;
+    border-radius: 25px;
+    border: #00704A solid 5px;
+    width: 60%;
+    height: 85%;
+    margin-bottom: 5vh;
+    gap: 3vh;
+    transition: 0.5s ease;
+}
+
+.curriculo:hover {
+    transition: 0.5s ease;
+    transform: scale(0.98);
+}
+
+.blocao,
+.blocao2 {
+    background-color: white;
+    border-radius: 20px;
+    width: 50vh;
+    height: 100%;
+}
+
+.blocao3 {
+    background-color: white;
+    border-left: #00704A solid 5px;
+    border-radius: 20px;
+    width: 65vh;
+    height: 100%;
+}
+
+.coisa {
+    color: #00704A;
+}
+
+.bloco {
+    margin-left: 2vh;
+    margin-top: 2vh;
+    display: flex;
+    border-bottom: #00704A solid 4px;
+    justify-content: center;
+    height: auto;
+    text-align: left;
+    width: 90%;
+}
+
+.meunome {
+    cursor: default;
+    margin-left: 2vh;
+    font-size: clamp(2rem, 2.5vw, 3rem);
+    color: #00704A;
+    font-weight: 550;
+    margin-bottom: 2vh;
+}
+
+.bloco2 {
+    margin-top: 2vh;
+    width: 100%;
+    height: 25vh;
+}
+
+.bloco3 {
+    width: auto;
+    height: auto;
+}
+
+.blocao2 {
+    width: 50vh;
+    height: 100%;
+}
+
+
+
+.bloco4 {
+    margin-top: 2vh;
+    width: 100%;
+    height: 35vh;
+}
+
+.bloco5 {
+    width: 100%;
+    height: 20vh;
+}
+
+.bloco6 {
+    margin-top: 2vh;
+    width: 100%;
+    height: 35vh;
+}
+
+.bloco7 {
+    width: 100%;
+    height: 30vh;
+}
+
+.t1 {
+    cursor: default;
+    font-size: 20px;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul li::marker {
+    color: #00704A;
+}
+
+.listinha {
+    position: relative;
+    margin: 20px;
+    font-size: 16px;
+    gap: 50px;
+    text-decoration: none;
+    transition: 0.3s ease;
+    color: black;
+}
+
+.listinha::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #00704A;
+    transition: width 0.3s ease;
+}
+
+.listinha:hover::after {
+    width: 100%;
+}
+
+.listinha:hover {
+    transition: 0.3s ease;
+}
+
+.listinha2 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    margin-top: 35px;
+    list-style: none;
+}
+
+a {
+    color: black;
+}
+
+.paragrafo {
+    text-align: center;
+    font-size: 16.5px;
+    margin-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    cursor: default;
+    text-align: center;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------------------- */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 5vh;
+    background-color: #00704A;
+}
+
+.mini {
+    cursor: default;
+    color: white;
+    font-size: small;
+    transition: 0.3s ease;
+}
+
+.mini:hover {
+    text-shadow:
+        2px 0 red,
+        -2px 0 cyan,
+        0 2px blue;
+    transition: 0.3s ease;
+    transform: scale(1.1);
+}
