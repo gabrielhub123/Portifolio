@@ -1,0 +1,876 @@
+/* HOME */
+
+:root {
+    --Cor1: #000000;
+    --Cor2: #c9c9c9;
+    --Cor3: #ffffff;
+    --Cor4: #c50d0d;
+    --Cor5: #0e0c0c;
+    --Cor6: #171717;
+    --Cor7: #a8a29e;
+
+    --Cor8: #f5f5f5;
+}
+
+.main_height {
+    height: 100vh;
+}
+
+.cabeca {
+    background-color: #000;
+    opacity: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    transition: .7s;
+    position: fixed;
+    z-index: 1;
+}
+
+.cabeca:hover {
+    background-color: var(--Cor1);
+    opacity: 100%;
+}
+
+.social {
+    font-family: "socialfont";
+    position: absolute;
+}
+
+body.home {
+    padding: 0;
+    margin: 0;
+    background-image: url(SENAI\ São\ Caetano\ _\ Nelson\ Kon.PNG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.TxtBranco {
+    color: var(--Cor3);
+    font-size: 17px;
+    font-family: "fontfoda";
+    text-align: right;
+    margin-top: 7px;
+    font-size: 135%;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10%;
+}
+
+
+.TxtBranco:Hover {
+    text-decoration: none;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@font-face {
+    font-family: "fontfoda";
+    src: url(fonts/Eastman-Condensed-Extrabold-trial.otf)
+}
+
+@font-face {
+    font-family: "fontsocial";
+    src: url(fonts/Icons\ Social\ Media\ 6.ttf)
+}
+
+.logosenai {
+    height: 90px;
+    margin-top: 3px;
+    margin-left: 50px;
+    margin-bottom: 5px;
+    size: 5%;
+    display: flex;
+    justify-content: left;
+}
+
+li.TxtBranco {
+    list-style: none;
+    color: var(--Cor3);
+}
+
+.LinksCabeca {
+    display: flex;
+    padding-left: 22%;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+.LinksCabeca ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.LinksCabeca ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.LinksCabeca ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    transition: 0.5s;
+}
+
+.LinksCabeca ul li:hover::after {
+    width: 100%;
+}
+
+.mensagem {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+.mensagem h1 {
+    font-size: 100px;
+    margin-top: 80px;
+    font-family: fontfoda;
+}
+
+.mensagem p {
+    margin: 20px auto;
+    font-size: 125%;
+    font-family: fontfoda;
+}
+
+button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #000000;
+    background: transparent;
+    color: #FFFFFF;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.linkbt {
+    text-decoration: none;
+    color: #fff
+}
+
+span {
+    background: #000;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s
+}
+
+button:hover span {
+    width: 100%;
+}
+
+button:hover {
+    border: none;
+}
+
+/* FOOTER (☞ﾟヮﾟ)☞ */
+
+* {
+    font-family: 'inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+
+footer {
+    width: 100%;
+    color: var(--Cor8);
+}
+
+#footer_content {
+    background-color: var(--Cor6);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 3.5rem;
+}
+
+#footer_contacts h1 {
+    margin-bottom: 0.75rem;
+}
+
+#footer_social_media {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+#footer_social_media .footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--Cor8);
+    border-radius: 50%;
+    transition: all .4s;
+    text-decoration: none;
+}
+
+#footer_social_media .footer-link:hover {
+    opacity: 0.8;
+}
+
+#instagram {
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#facebook {
+    background-color: #4267b3;
+}
+
+#whatsapp {
+    background-color: #25d366;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+.footer-list .footer-link {
+    color: var(--Cor7);
+}
+
+.footer-list .footer-link:hover {
+    color: #7f37c9;
+}
+
+#footer_subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#footer_subscribe p {
+    color: var(--Cor7);
+}
+
+#input_group {
+    display: flex;
+    align-items: center;
+    background-color: var(--Cor5);
+    border-radius: 4px;
+    width: 350px;
+    height: 50px;
+
+}
+
+#input_group input {
+    all: unset;
+    width: 100%;
+    height: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+#input_group button {
+    background-color: #ff0000ab;
+    border: none;
+    color: var(--Cor8);
+    padding: 0px 1.25rem;
+    font-size: 1.125rem;
+    border-radius: 0px 4px 4px 0px;
+    margin: 0;
+    height: 100%;
+    width: 100px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+#input_group button:hover {
+    opacity: 0.8;
+}
+
+#footer_copyright {
+    display: flex;
+    justify-content: center;
+    background-color: var(--Cor5);
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+}
+
+@media screen and (max-width: 768px) {
+    #footer_content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    #footer_content {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 3rem 2rem;
+    }
+}
+
+/* FOOTER (☞ﾟヮﾟ)☞ */
+
+#ul-header {
+    margin-right: 15%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 0px;
+
+}
+
+a.homea {
+    color: var(--Cor3);
+    text-decoration: none;
+    font-family: fontfoda;
+}
+
+/* HOME (☞ﾟヮﾟ)☞ */
+
+/* catalogo */
+
+.catalogo_height {
+    height: 250vh;
+}
+
+body.catalogo {
+    background-color: #1f1f1f;
+}
+
+.tjogos {
+    color: var(--Cor4);
+    padding-top: 9%;
+    text-align: center;
+    font-size: 280%;
+}
+
+.jogo2 {
+    width: 1000px;
+    height: 400px;
+}
+
+.imagecup {
+    width: 1000px;
+    height: 400px;
+    background-image: url(cup.png);
+    z-index: 2;
+}
+
+.videocup {
+    width: 1000px;
+    height: 400px;
+    z-index: 1;
+}
+
+
+.alinhamentoJG {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.IMGsize {
+    height: 500px;
+    width: 850px;
+    border-radius: 0px;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+    margin-bottom: 2%;
+    margin-top: 3%;
+}
+
+.IMGsize:hover {
+    transform: scale(1.05);
+    border-radius: 6%;
+}
+
+.JogosLista {
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 3%;
+    padding-top: 3%;
+    display: flex;
+}
+
+.IMGsize:hover {
+    .secundaria {
+        display: unset;
+    }
+
+    .principal {
+        display: none;
+
+    }
+}
+
+.textojogos {
+    width: 45%;
+    margin-top: 50px;
+    color: #fff;
+
+}
+
+.secundaria {
+    display: none;
+}
+
+.qpegatd {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* SOBRE */
+
+.sobre_height {
+    height: 100vh;
+}
+
+body.sobre {
+    margin: 0;
+    padding: 0;
+    background-color: #1f1f1f;
+}
+
+.LinksCabeca.sobre {
+    display: flex;
+    padding-left: 432%;
+    width: 100%;
+
+}
+
+
+.titulo {
+    display: flex;
+    position: absolute;
+    top: 130px;
+    left: 890px;
+    font-family: "fontfoda";
+    color: var(--Cor4);
+}
+
+.titulo2 {
+    display: flex;
+    position: absolute;
+    font-family: "fontfoda";
+    color: var(--Cor4);
+    top: 535px;
+    left: 17%;
+}
+
+.paragrafo {
+    display: flex;
+    color: #fff;
+}
+
+.paragrafo2 {
+    display: flex;
+    left: 17%;
+    color: #fff;
+}
+
+.paragrafo1certo {
+    background-color: rgba(153, 255, 0, 0);
+    margin-top: 210px;
+    margin-left: 890px;
+    width: 600px;
+    position: absolute;
+    display: flex;
+
+}
+
+.paragrafo2certo {
+    background-color: rgba(172, 255, 47, 0);
+    margin-top: 610;
+    margin-left: 17%;
+    width: 500px;
+    height: 200px;
+    position: absolute;
+    display: flex;
+
+}
+
+.subtitulo {
+    display: flex;
+    position: absolute;
+    top: 175px;
+    left: 890px;
+    font-family: "fontfoda";
+    color: var(--Cor4);
+    font-size: 110%;
+}
+
+.subtitulo2 {
+    display: flex;
+    position: absolute;
+    font-size: 110%;
+    font-family: "fontfoda";
+    color: var(--Cor4);
+    top: 580px;
+    left: 17%;
+}
+
+.sobreM {
+    display: flex;
+    position: absolute;
+    font-family: "fontfoda";
+    color: var(--Cor4);
+    font-size: 20px;
+    left: 890px;
+    top: 450px;
+}
+
+.sobrem2 {
+    display: flex;
+    position: absolute;
+    font-family: "fontfoda";
+    font-size: 20px;
+    color: var(--Cor4);
+    margin-top: 170px;
+}
+
+.senai1 {
+    height: 350px;
+    display: flex;
+    position: absolute;
+    top: 13.9%;
+    left: 17%;
+}
+
+.Senai2 {
+    height: 350px;
+    width: 600px;
+    display: flex;
+    position: absolute;
+    top: 56.5%;
+    left: 890px;
+    margin-bottom: 50%;
+}
+
+/* SOBRE */
+
+/* PERFIL*/
+
+.perfil_height {
+    height: 100vh;
+    background-image: url(SENAI\ São\ Caetano\ _\ Nelson\ Kon.PNG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.botaoenviar {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botaoenviar button {
+    background-color: #00000000;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 90%;
+    border: none;
+    width: 90px;
+    height: 40px;
+    background-color: white;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    opacity: 50%;
+}
+
+.botaoenviar button:hover {
+    transform: scale(1.10);
+    opacity: 85%;
+}
+
+.botaogay {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.linkbotao {
+    color: black;
+    text-decoration: none;
+}
+
+.boxnome {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    opacity: 50%;
+    transition: 0.5s;
+}
+
+.boxnome:hover {
+    opacity: 85%;
+}
+
+.boxsenha {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    opacity: 50%;
+}
+
+.boxsenha:hover {
+    opacity: 85%;
+}
+
+.arealogin input {
+    display: flex;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 110%;
+    width: 100%;
+    border-radius: 10px;
+    height: 50px;
+    background-color: #00000000;
+    border: 0px;
+    padding-left: 20px;
+    justify-content: center;
+}
+
+.arealogin {
+    border: 1px solid #FFFFFF;
+    background: #00000071;
+    border-radius: 30px;
+    width: 400px;
+    padding: 50px;
+    margin-bottom: 200px;
+    align-items: center;
+    transition: 500ms;
+}
+
+.arealogin:hover {
+    transform: scale(1.10);
+}
+
+.centro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+
+}
+
+.senaicentro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.senailogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+/*Suporte*/
+
+.sup {
+    height: 100vh;
+    background-color: #1f1f1f;
+}
+
+#centrosuporte {
+    justify-content: space-evenly;
+    display: flex;
+    padding-top: 250px;
+}
+
+#supportbox {
+
+    height: 500px;
+    display: flex;
+
+}
+
+#mensagemsup h1 {
+    margin-left: 40px;
+    font-family: "fontfoda";
+    font-size: 300%;
+    color: #fff;
+}
+
+#mensagemsup p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 150%;
+    margin-left: 40px;
+    width: 700px;
+    color: #fff;
+}
+
+#supportbox2 h3 {
+    font-family: "fontfoda";
+    padding-top: 30px;
+    padding-bottom: 10PX;
+    margin-left: 25px;
+    color: white;
+
+}
+
+#mensagemsup {
+    background: linear-gradient(to right, #ff0000ab, transparent);
+    width: 770px;
+    align-self: top;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+
+
+}
+
+#supportbox2 {
+    background: linear-gradient(to left, #747474d0, transparent);
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+}
+
+#caixa_nome1 {
+    width: 90%;
+    height: 50px;
+    margin-left: 25px;
+    text-align: top;
+    font-size: 103%;
+    padding: 5px;
+    border-radius: 10px;
+    opacity: 65%;
+    transition: 200ms;
+}
+
+#caixa_nome1:hover {
+    opacity: 80%;
+}
+
+#caixa_email:hover {
+    opacity: 80%;
+}
+
+#caixa_help:hover {
+    opacity: 80%;
+}
+
+#caixa_email {
+    width: 90%;
+    height: 50px;
+    margin-left: 25px;
+    font-size: 103%;
+    padding: 5px;
+    border-radius: 10px;
+    opacity: 50%;
+}
+
+#caixa_help {
+    width: 90%;
+    height: 110px;
+    margin-left: 25px;
+    text-align: top;
+    padding: 5px;
+    font-size: 103%;
+    border-radius: 10px;
+    opacity: 50%;
+}
+
+#caixa_button {
+    width: 100px;
+    height: 50px;
+    margin-top: 37px;
+    margin-left: 78%;
+    border-radius: 20px;
+    background-color: #ffffff;
+    font-size: 120%;
+    transition: 0.5s ease;
+    opacity: 65%
+}
+
+#caixa_button:hover {
+    transform: scale(1.05);
+    opacity: 80%
+}
+
+/* PAGINA EMAIL ENVIADO*/
+
+.email {
+    height: 95vh;
+    background-color: #1f1f1f;
+    align-content: center;
+}
+
+.emai_enviado {
+    display: flex;
+    width: 700px;
+    height: 400px;
+    background-color: #171717;
+    justify-self: center;
+    border-radius: 8px;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.emai_enviado h1 {
+    color: #FFFFFF;
+    font-size: 140%;
+    width: 500px;
+    align-self: center;
+}
+
+.emai_enviado p {
+    color: #FFFFFF;
+    font-size: 120%;
+    width: 600px;
+    align-self: center;
+    padding: 20px;
+}
+
+.voltar {
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 20px;
+    left: 25px;
+    font-size: 135%;
+}

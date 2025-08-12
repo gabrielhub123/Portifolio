@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Otomo Restaurante</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" crossorigin="anonymous" />
+</head>
+<body>
+<header class="header">
+    <div class="containerHeader">
+        <div class="flex">
+            <a href="index.html"><img class="logo" src="logo.png" alt="Logo Otomo" /></a>
+            <nav>
+                <ul>
+                    <li><a class="titulos" onclick="rodizio.html">Rodízio</a></li>
+                    <li><a class="titulos" href="cardapio.html">Cardápio</a></li>
+                    <li><a class="titulo" href="#">Reservas</a></li>
+                </ul>
+                <div class="square"></div>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<main class="container">
+    <h1>Reserva de Mesa</h1>
+    <form id="form-reserva" class="formulario" method="post" action="reservas.php">
+        <!-- ETAPA 1 -->
+        <div class="form-step active">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <div class="input_box">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" name="nome" id="nome" required />
+                </div>
+                <div class="input_box">
+                    <label for="cpf">CPF</label>
+                    <input type="text" name="cpf" id="cpf" />
+                </div>
+                <div class="input_box">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" name="telefone" id="telefone" required />
+                </div>
+                <div class="input_box">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" required />
+                </div>
+            </fieldset>
+            <div class="botao">
+                <button type="button" onclick="nextStep()">Próximo</button>
+            </div>
+        </div>
+
+        <!-- ETAPA 2 -->
+        <div class="form-step">
+            <fieldset>
+                <legend>Informações da Reserva</legend>
+                <div class="input_box">
+                    <label for="data_reserva">Data da Reserva</label>
+                    <input type="date" name="data_reserva" id="data_reserva" required />
+                </div>
+                <div class="input_box">
+                    <label for="hora_reserva">Horário</label>
+                    <input type="time" name="hora_reserva" id="hora_reserva" required />
+                </div>
+                <div class="input_box">
+                    <label for="quantidade_pessoas">Número de Pessoas</label>
+                    <input type="number" name="quantidade_pessoas" id="quantidade_pessoas" min="1" max="20" required />
+                </div>
+            </fieldset>
+            <div class="botao">
+                <button type="button" onclick="prevStep()">Voltar</button>
+                <button type="button" onclick="nextStep()">Próximo</button>
+            </div>
+        </div>
+
+        <!-- ETAPA 3 -->
+        <div class="form-step">
+            <fieldset>
+                <legend>Observações e Confirmação</legend>
+                <div class="input_box">
+                    <label for="observacoes">Observações</label>
+                    <textarea name="observacoes" id="observacoes" rows="4" placeholder="Alergias, preferências, etc."></textarea>
+                </div>
+                <div class="checkbox_box">
+                    <input type="checkbox" id="confirmacao" name="confirmacao" required />
+                    <label for="confirmacao">Confirmo que li e aceito os termos da reserva.</label>
+                </div>
+            </fieldset>
+            <div class="botao">
+                <button type="button" onclick="prevStep()">Voltar</button>
+                <input type="submit" value="Reservar" />
+            </div>
+        </div>
+    </form>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-contacts">
+            <h1>Redes sociais</h1>
+            <p>It's all about your dreams.</p>
+
+            <div class="footer-social-media">
+                <a href="#" class="footer-link instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" class="footer-link facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#" class="footer-link whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div><!-- footer-social-media -->
+
+        </div><!-- footer-contacts -->
+
+        <ul class="footer-list">
+            <li>
+                <h3>Menu</h3>
+            </li>
+            <li>
+                <a href="rodizio.html" class="footer-link">Rodízio</a>
+            </li>
+            <li>
+                <a href="cardapio.html" class="footer-link">Cardápio</a>
+            </li>
+            <li>
+                <a href="reservas.html" class="footer-link">Reservas</a>
+            </li>
+        </ul><!-- footer-list -->
+
+        <ul class="footer-list">
+            <li>
+                <h3>Rodizio</h3>
+            </li>
+            <li>
+                <a href="cardapio.html" class="footer-link">Sushis</a>
+            </li>
+            <li>
+                <a href="cardapio.html" class="footer-link">Temakis</a>
+            </li>
+            <li>
+                <a href="reservas.html" class="footer-link">Sobremesas</a>
+            </li>
+        </ul><!-- footer-list -->
+
+        <ul class="footer-list">
+            <li>
+                <h3>Venha nos visitar !</h3>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Largo das Zebras 85, Humaitá
+                    Rio de Janeiro / RJ – 22260-210</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Google Maps</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Waze</a>
+            </li>
+        </ul><!-- footer-list -->
+    </div>
+</footer>
+
+<script>
+    // Header toggle on scroll
+    window.addEventListener('scroll', () => {
+        const header = document.querySelector('.header');
+        header.classList.toggle('rolagem', window.scrollY > 0);
+    });
+
+    // Scroll suave
+    function scrollWin() {
+        window.scrollTo({ top: 1550, left: 0, behavior: 'smooth' });
+    }
+
+    // Máscara CPF
+    document.getElementById('cpf').addEventListener('input', function (e) {
+        let valor = e.target.value.replace(/\D/g, '');
+        if (valor.length > 11) valor = valor.slice(0, 11);
+        e.target.value = valor.replace(/(\d{3})(\d{3})(\d{3})(\d{0,2})/, (_, p1, p2, p3, p4) => {
+            return `${p1}.${p2}.${p3}-${p4}`;
+        });
+    });
+
+    // Máscara Telefone
+    document.getElementById('telefone').addEventListener('input', function (e) {
+        let valor = e.target.value.replace(/\D/g, '');
+        if (valor.length > 11) valor = valor.slice(0, 11);
+        e.target.value = valor.replace(/(\d{2})(\d{5})(\d{0,4})/, (_, p1, p2, p3) => {
+            return `(${p1}) ${p2}-${p3}`;
+        });
+    });
+
+    // Controle do formulário multi-etapas
+    let currentStep = 0;
+    const steps = document.querySelectorAll('.form-step');
+
+    function showStep(index) {
+        steps.forEach((step, i) => step.classList.toggle('active', i === index));
+    }
+
+    function nextStep() {
+        const currentForm = steps[currentStep];
+        const inputs = currentForm.querySelectorAll('input, textarea');
+
+        let allValid = true;
+
+        for (const input of inputs) {
+            if (input.hasAttribute('required') && input.value.trim() === '') {
+                input.classList.add('input-erro');
+                allValid = false;
+            } else {
+                input.classList.remove('input-erro');
+            }
+        }
+
+        if (!allValid) {
+            alert('Preencha todos os campos obrigatórios antes de continuar.');
+            return;
+        }
+
+        if (currentStep < steps.length - 1) {
+            currentStep++;
+            showStep(currentStep);
+        }
+    }
+
+    function prevStep() {
+        if (currentStep > 0) {
+            currentStep--;
+            showStep(currentStep);
+        }
+    }
+
+    // Validação final no envio
+    document.getElementById('form-reserva').addEventListener('submit', function (e) {
+        const dataReserva = document.getElementById('data_reserva').value;
+        const hoje = new Date().toISOString().split("T")[0];
+        const checkboxConfirmacao = document.getElementById('confirmacao');
+
+        if (dataReserva < hoje) {
+            e.preventDefault();
+            alert("Por favor, selecione uma data válida no futuro.");
+            currentStep = 1;
+            showStep(currentStep);
+            return false;
+        }
+
+        if (!checkboxConfirmacao.checked) {
+            e.preventDefault();
+            alert("Você precisa aceitar os termos da reserva para continuar.");
+            currentStep = 2;
+            showStep(currentStep);
+            return false;
+        }
+
+        alert("Reserva enviada com sucesso! Entraremos em contato.");
+    });
+
+    // Início
+    document.addEventListener('DOMContentLoaded', () => {
+        showStep(currentStep);
+    });
+
+    // Geração de horários de 30 em 30 minutos a partir da hora atual
+function arredondarHorario(minutosBase) {
+    const agora = new Date();
+    const minutos = agora.getMinutes();
+    const arredondado = Math.ceil(minutos / minutosBase) * minutosBase;
+
+    if (arredondado === 60) {
+        agora.setHours(agora.getHours() + 1);
+        agora.setMinutes(0);
+    } else {
+        agora.setMinutes(arredondado);
+    }
+
+    agora.setSeconds(0);
+    agora.setMilliseconds(0);
+
+    return agora;
+}
+
+function gerarHorariosReserva(intervaloMinutos = 30, horasAdiante = 6) {
+    const select = document.getElementById("hora_reserva");
+    select.innerHTML = ''; // Limpa opções antigas
+
+    const inicio = arredondarHorario(intervaloMinutos);
+    const fim = new Date(inicio.getTime() + horasAdiante * 60 * 60 * 1000);
+    const opcoes = [];
+
+    let atual = new Date(inicio);
+
+    while (atual <= fim) {
+        const hora = atual.getHours().toString().padStart(2, '0');
+        const minutos = atual.getMinutes().toString().padStart(2, '0');
+        const valor = `${hora}:${minutos}`;
+        const opcao = document.createElement("option");
+        opcao.value = valor;
+        opcao.textContent = valor;
+        select.appendChild(opcao);
+        atual.setMinutes(atual.getMinutes() + intervaloMinutos);
+    }
+}
+
+// Chamar ao carregar a etapa 2
+document.getElementById('data_reserva').addEventListener('change', gerarHorariosReserva);
+
+// Também chama quando a página carregar
+document.addEventListener('DOMContentLoaded', gerarHorariosReserva);
+</script>
+</body>
+</html>

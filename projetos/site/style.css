@@ -1,0 +1,810 @@
+@font-face {
+    font-family: 'Garet';
+    src: url('font/Garet-Book.otf');
+}
+
+/* cabeçalho */
+.titulos {
+    color: gray;
+    transition: .7s;
+}
+
+.titulos:hover {
+    color: black;
+}
+
+.titulo {
+    color: gray;
+    transition: .3s;
+    border: solid .5px gray;
+    border-style: solid;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    border-radius: 2px;
+}
+
+.titulo:hover {
+    color: rgb(255, 255, 255);
+    background-color: #242424;
+    opacity: 50%;
+    border: #ff676400
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Garet', sans-serif;
+    font-size: 30px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+body {
+    background-color: #f4f0f0;
+}
+
+header {
+    width: 100%;
+    padding: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .4s;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0 px;
+    cursor: pointer
+}
+
+header ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+    margin: 30px;
+}
+
+header img {
+    transition: .4s;
+}
+
+header.rolagem {
+    z-index: 9 !important;
+    width: 100%;
+    padding: 15px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 2px 0px 14px -7px rgba(0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: 0.4s;
+}
+
+header.rolagem img {
+    width: 125px;
+    margin-left: -75px;
+}
+
+header.rolagem a {
+    font-size: 20px;
+}
+
+.logo {
+    width: 200px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer
+}
+
+.prato_home {
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+/* fundo */
+
+
+.gradient_home {
+    width: 100%;
+    position: relative;
+    z-index: 3;
+}
+
+.gradient_home2 {
+    width: 100%;
+    position: relative;
+    transform: rotate(180deg);
+    /* Gira a imagem 180 graus */
+    z-index: 3;
+}
+
+.sec {
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 0;
+    z-index: 5;
+}
+
+
+/* sobre */
+
+.sobre{
+    display: flex;
+    justify-self: center;
+    width: 100vh;
+    margin-bottom: 10vh;
+}
+
+.p{
+    font-size: 20px;
+    text-align: right;
+}
+
+.textinho1{
+    text-align: right;
+    width: 70vh;
+}
+
+.titulinho{
+    /*  */
+    font-size: 35px;
+    color: #ff6664;
+    text-align: right;
+}
+
+.foto1{
+    width: 10vh;
+    padding-left: 8vh;
+    padding-bottom: 10vh;
+    padding-top: 10vh;
+}
+
+.foto2{
+    width: 10vh;
+    padding-left: 8vh;
+    padding-bottom: 10vh;
+}
+
+.foto3{
+    width: 10vh;
+    padding-left: 8vh;
+    padding-bottom: 10vh;
+}
+
+.fotos{
+    
+}
+/* Rodizio (container 1) */
+
+.container1_home {
+    display: flex;
+    padding-top: 15vh;
+    background-color: rgb(255, 255, 255);
+    width: 100vh;
+    height: 65vh;
+    margin-right: 20vh;
+    margin-bottom: 20vh;
+}
+
+.titulo1_home {
+    color: #ff6664;
+    font-size: 70px;
+    font-family: 'Garet', sans-serif;
+}
+
+.descricao_container {
+    font-family: 'Garet', sans-serif;
+    font-size: 20px;
+    width: 140%;
+    height: auto;
+}
+
+.botao_rodizio {
+    display: flex;
+    margin-top: 20px;
+    width: 200px;
+    height: 60px;
+    background-color: #ff6664;
+    border-radius: 50px;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.botao_rodizio a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    align-self: center;
+    justify-self: center;
+}
+
+/* Cardápio (Container 2) */
+
+.titulo2_home {
+    color: #ff6664;
+    font-size: 70px;
+    font-family: 'Garet', sans-serif;
+}
+
+.container2_home {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    width: 100vh;
+    height: 65vh;
+    margin-bottom: 20vh;
+    justify-content: center;
+}
+
+.texto_container2 h1 {
+    margin-top: 10vh;
+    align-items: center;
+    text-align: center;
+}
+
+.imagem_container2 {
+    margin-left: 30px;
+}
+
+.texto_container2 {
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.descricao_container2 {
+    font-size: small;
+    font-family: 'Garet', sans-serif;
+}
+
+.botao_cardapio {
+    display: flex;
+    margin-top: 17px;
+    width: 200px;
+    height: 60px;
+    background-color: #ff6664;
+    border-radius: 50px;
+    text-align: center;
+    justify-content: center;
+}
+
+.botao_cardapio a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    align-self: center;
+    justify-self: center;
+}
+
+.descricao_container2 {
+    font-size: 20px;
+    width: 70vh;
+    font-family: 'Garet', sans-serif;
+}
+
+.botao_cardapio {
+    display: flex;
+    margin-top: 17px;
+    width: 200px;
+    height: 60px;
+    background-color: #ff6664;
+    border-radius: 50px;
+    text-align: center;
+    justify-content: center;
+}
+
+.botao_cardapio a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    align-self: center;
+    justify-self: center;
+}
+
+/* Reservas (Container 3) */
+
+.titulo3_home {
+    color: #ff6664;
+    font-size: 70px;
+    font-family: 'Garet', sans-serif;
+}
+
+.imagem_container3 {
+    position: absolute;
+    width: 35%;
+    height: auto;
+    left: 45vh;
+    top: 175vh;
+}
+
+.container3_home {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    width: 100vh;
+    height: 55vh;
+    margin-top: 5vh;
+    margin-right: 10vh;
+    justify-content: center;
+    z-index: 5;
+}
+
+.texto_container3 {
+    margin-right: 15px;
+    text-align: right;
+    justify-content: center;
+    justify-items: right;
+    margin-right: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Garet', sans-serif;
+}
+
+.descricao_container3 {
+    width: 60%;
+    font-size: 20px;
+    font-family: 'Garet', sans-serif;
+    text-align: right;
+}
+
+.subParagrafo {
+    font-family: 'Garet';
+    font-size: small;
+    width: 37vh;
+    color: gray;
+    margin-top: 10px;
+    opacity: 70%;
+}
+
+.botao_reservas {
+    display: flex;
+    background-color: #ff6664;
+    border-radius: 50px;
+    text-align: center;
+    justify-content: center;
+    width: 200px;
+    height: 60px;
+    margin-top: 10px;
+}
+
+.botao_reservas a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    align-self: center;
+    justify-self: center;
+}
+
+.email_confirmacao{
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    width: 10px;
+    font-size: 2px;
+}
+
+.email_container_caixa{
+    justify-items: center;
+    align-items: center;
+}
+
+/* Cardapio  */
+
+.teste{
+    width: 100% auto;
+    background-color: #f4f0f4;
+}
+
+h1 {
+    font-size: 2vh;
+}
+
+.menu {
+    width: 100vh;
+    justify-self: center;
+    margin-top: 20vh;
+    margin-bottom: 10vh;
+}
+
+.categoria {
+    margin-bottom: 40px;
+}
+
+.categoria h2 {
+    color: #d00000;
+    border-bottom: 2px solid #d00000;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+
+
+.item {
+    display: flex;
+    height: 21.5vh;
+    background-color: #fff5f5;
+    border-left: 5px solid #ff8a80;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    transition:.5s;
+}
+
+.item:hover{
+    transition: .5s;
+    transform: scale(1.1);
+}
+
+.item h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.item p {
+    font-size: 0.95em;
+    margin-bottom: 5px;
+}
+
+.item span {
+    font-weight: bold;
+    color: #d00000;
+}
+
+.inform{
+    width: 80%;
+    margin-left: 3vh;
+}
+
+h4{
+    font-size: small;
+}
+
+.fotinhaa{
+    background-color: #d00000;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+}
+
+.botao_volta {
+    padding: 10px 20px;
+    background-color: #d00000;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.botao_voltar:hover{
+    transition: .5s;
+    transform: scale(1.1);
+}
+
+/* Formulário */
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 200px;
+}
+
+form fieldset {
+    border: none;
+}
+
+legend {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.input_box {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input_box label {
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.input_box input,
+.input_box textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.checkbox_box {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.botao {
+    text-align: center;
+}
+
+.botao input[type="submit"] {
+    padding: 10px 30px;
+    background-color: #ff6664;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.botao input[type="submit"]:hover {
+    background-color: #ff6664;
+}
+
+.form-step {
+    display: none;
+    animation: fade 0.3s ease-in-out;
+}
+
+.form-step.active {
+    display: block;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.botao button {
+    padding: 10px 20px;
+    background-color: #ff6664;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 5px;
+}
+
+.botao button:hover {
+    background-color: #e14b49;
+}
+
+/* Estilos para o foco nos campos */
+.input_box input:focus,
+.input_box textarea:focus {
+    border-color: #ff6664;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 102, 100, 0.5);
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+    .container {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .input_box {
+        font-size: 0.95em;
+        /* Ajustando o tamanho da fonte para telas menores */
+    }
+
+    .botao input[type="submit"] {
+        width: 100%;
+        /* Tornando o botão de envio 100% da largura */
+        padding: 12px;
+    }
+}
+/* Formulário */
+
+.pratoPrincipal {
+    width: 99%;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    position: relative;
+    top: -50px;
+    z-index: 2;
+    text-align: center;
+    padding: 15px;
+    background-color: #f1f1f1;
+    margin-top: 40px;
+}
+
+.footer-link {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.footer-content {
+    background-color: #f4f0f0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3.5rem;
+}
+
+.footer-contacts h1 {
+    margin-bottom: 0.75rem;
+}
+
+.footer-social-media {
+    display: flex;
+    gap: 2rem;
+    margin-left: 3vh;
+    margin-top: 1.5rem;
+}
+
+.footer-social-media .footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--color-neutral-40);
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+.footer-social-media .footer-link i {
+    font-size: 35px;
+}
+
+.footer-social-media .footer-link:hover {
+    background-color: #d45553;
+    opacity: 1px;
+}
+
+i {
+    color: white;
+}
+
+.instagram {
+    background: #ff6664;
+}
+
+.facebook {
+    background: #ff6664;
+}
+
+.whatsapp {
+    background: #ff6664;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+.footer-list1 {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.footer-list .footer-link {
+    color: var(--color-neutral-30);
+    transition: all 0.4s;
+}
+
+.footer-list .footer-link:hover {
+    color: .7f37c9;
+}
+
+
+/* Pagina Rodizio */
+
+.titulinhor{
+    font-size: 35px;
+    color: #ff6664;
+    text-align: left;
+}
+
+.container1_rodizio{
+    display: flex;
+    width: 150vh;
+    height: auto;
+    padding: 30px;
+    justify-self: center;
+    align-items: center;
+}  
+
+.descricao_container_rodizio{
+    font-size: 22px;
+    padding-bottom: 8px;
+}
+
+.container1_rodizio img{
+    border-radius: 40px;
+    width: 600px;
+    padding: 30px;
+}
+.foto_rodizio{
+    margin-top: 20vh;
+    width: 80vh;
+    height: auto;
+    background-color: yellowgreen;
+    display: flex;
+    justify-self: center;
+    text-align: left;
+}
+
+.foto_rodizio img{
+    width:100%;     
+}
+
+.rodizio_branco{
+    background-color: white;
+}
+.sec_rodizio {
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 0;
+    z-index: 5;
+
+}
+
+
+.gradient_rodizio {
+    width: 100%;
+    position: relative;
+    z-index: 3;
+    /* top: 400px; */
+}
+
+.gradient_rodizio2{
+    width: 100%;
+    position: relative;
+    transform: rotate(180deg);
+    /* Gira a imagem 180 graus */
+    z-index: 3;
+    /* bottom: 600px; */
+}
+
+
+.precor{
+    font-size: larger;
+    color: #940000;
+}
+.aniver{
+    font-size: medium;
+    color: #940000;
+}
+
+.pratoRodizio{
+    width: 99%;
+    background-color:#f4f0f0;
+}
+

@@ -1,0 +1,366 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Otomo Restaurante</title>
+</head>
+
+<body class="teste">
+    <header class="header">
+        <div class="containerHeader">
+            <div class="flex">
+                <a onclick="scrollWin0()"><i><img class="logo" src="logo.png" alt=""></i></a>
+                <nav>
+                    <ul>
+                        <li><a class="titulos" onclick="sopas()">Sopas</a></li>
+                        <li><a class="titulos" onclick="sushi()">Sushis</a></li>
+                        <li><a class="titulos" onclick="temakis()">Temakis</a></li>
+                        <li><a class="titulos" onclick="sobremesas()"> Sobremesas </a></li>
+                        <li><a class="titulo" onclick="bebidas()"> Bebidas </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+    <script src="script.js"></script> <!-- sem isso a animação não funciona -->
+
+    <main class="menu">
+        <section class="categoria"> <!-- o section ajuda a organizar um bloco de itens especificos -->
+            <h2>Sopas</h2>
+            <div class="item">
+                <div><img class="fotinhaa" src="missoshiru.png" alt=""></div>
+                <div class="inform">
+                    <h3>Missoshiru</h3>
+                    <p>Caldo de missô com tofu, cebolinha e alga wakame.
+                    <h4>250 ml</h4>
+                    </p>
+                    <span>R$ 12,90</span>
+                </div>
+            </div>
+            <div class="item">
+                <div><img class="fotinhaa" src="lamen.png" alt=""></div>
+                <div class="inform">
+                    <h3>Lámen</h3>
+                    <p>Macarrão oriental com caldo à base de shoyu, legumes e ovo cozido.
+                    <h4>1 porção</h4>
+                    </p>
+                    <span>R$ 29,90</span>
+                </div>
+            </div>
+            <div class="item">
+                <div><img class="fotinhaa" src="udon.png" alt=""></div>
+                <div class="inform">
+                    <h3>Udon</h3>
+                    <p>Macarrão grosso de trigo em caldo quente com cebolinha e tempurá.
+                    <h4>1 porção</h4>
+                    </p>
+                    <span>R$ 26,90</span>
+                </div>
+            </div>
+            <div class="item">
+                <div><img class="fotinhaa" src="tonkotsuramen.png" alt=""></div>
+                <div class="inform">
+                    <h3>Tonkotsu Ramen</h3>
+                    <p>Caldo encorpado de porco com macarrão, ovo e chashu (carne suína).
+                    <h4>1 porção</h4>
+                    </p>
+                    <span>R$ 34,90</span>
+                </div>
+            </div>
+            <div class="item">
+                <div><img class="fotinhaa" src="zoni.png" alt=""></div>
+                <div class="inform">
+                    <h3>Zōni</h3>
+                    <p>Sopa tradicional do Ano Novo com mochi, vegetais e caldo leve.
+                    <h4>250 ml</h4>
+                    </p>
+                    <span>R$ 18,90</span>
+                </div>
+            </div>
+        </section>
+        <section class="categoria"> <!-- o section ajuda a organizar um bloco de itens especificos -->
+            <h2>Sushis</h2>
+            <div class="item">
+                <div><img class="fotinhaa" src="hotroll.png" alt=""></div>
+                <div class="inform">
+                    <h3>Hot Roll</h3>
+                    <p>Recheado com salmão e cream cheese.
+                    <h4>12 un.*</h4>
+
+                    </p>
+                    <span>R$ 24,90</span> <!-- é tipo um p como outro nome kkkk -->
+                </div>
+            </div>
+            <div class="item">
+                <div><img class="fotinhaa" src="nigirisalmao.png" alt=""></div>
+                <div class="inform">
+                    <h3>Salmão Nigiri</h3>
+                    <p>Bolinhos de arroz com fatia de salmão cru.
+                    <h4>09 un.*</h4>
+                    </p>
+                    <span>R$ 19,90</span>
+                </div>
+            </div>
+            <div class="item">
+                <div><img class="fotinhaa" src="sashimi.png" alt=""></div>
+                <div class="inform">
+                    <h3>Sashimi</h3>
+                    <p>Fatias finas de peixe.
+                    <h4>06 un.*</h4>
+                    </p>
+                    <span>R$ 14,90</span>
+                </div>
+            </div>
+            <div class="item">
+                <div><img class="fotinhaa" src="uramaki.png" alt=""></div>
+                <div class="inform">
+                    <h3>Uramaki</h3>
+                    <p>Arroz por fora, recheado com salmão e pepino.
+                    <h4>10 un.*</h4>
+                    </p>
+                    <span>R$ 22,90</span>
+                </div>
+            </div>
+            <div class="item">
+                <div><img class="fotinhaa" src="hossomaki.png" alt=""></div>
+                <div class="inform">
+                    <h3>Hossomaki</h3>
+                    <p>Enrolado fino com alga por fora e recheio de atum.
+                    <h4>10 un.*</h4>
+                    </p>
+                    <span>R$ 17,90</span>
+                </div>
+            </div>
+            <div class="item">
+                <div><img class="fotinhaa" src="jyosalmao.png" alt=""></div>
+                <div class="inform">
+                    <h3>Jyo Salmão</h3>
+                    <p>Arroz envolto em salmão com cobertura de cream cheese.
+                    <h4>08 un.*</h4>
+                    </p>
+                    <span>R$ 23,90</span>
+                </div>
+            </div>
+            <div class="item">
+                <div><img class="fotinhaa" src="gunkanskin.png" alt=""></div>
+                <div class="inform">
+                    <h3>Gunkan Skin</h3>
+                    <p>Arroz envolvido em alga, coberto com pele de salmão crocante.
+                    <h4>06 un.*</h4>
+                    </p>
+                    <span>R$ 18,90</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="categoria">
+            <h2>Temakis</h2>
+            <div class="item">
+                <div><img class="fotinhaa" src="temakisalmao.png" alt=""></div>
+                <div class="inform">
+                    <h3>Temaki Salmão</h3>
+                    <p>Temaki com salmão fresco, cebolinha e arroz.
+                    <h4>Tamanhos: Pequeno, Medio e Grande (+R$2,60 p/ tamanho)</h4>
+                    </p>
+                    <span>R$ 14,90</span>
+                </div>
+            </div>
+            <div class="item">
+                <div><img class="fotinhaa" src="temakiskin.png" alt=""></div>
+                <div class="inform">
+                    <h3>Temaki Skin</h3>
+                    <p>Pele de salmão grelhada, arroz e cebolinha.
+                    <h4>Tamanhos: Pequeno, Medio e Grande (+R$2,60 p/ tamanho)</h4>
+                    </p>
+                    <span>R$ 15,90</span>
+                </div>
+            </div>
+            <div class="item">
+                <div><img class="fotinhaa" src="temakicalifornia.png" alt=""></div>
+                <div class="inform">
+                    <h3>Temaki Califórnia</h3>
+                    <p>Kani, manga, pepino e arroz.
+                    <h4>Tamanhos: Pequeno, Medio e Grande (+R$2,60 p/ tamanho)</h4>
+                    </p>
+                    <span>R$ 12,90</span>
+                </div>
+            </div>
+            <div class="item">
+                <div><img class="fotinhaa" src="temakiatum.png" alt=""></div>
+                <div class="inform">
+                    <h3>Temaki Atum</h3>
+                    <p>Temaki com atum fresco, arroz e cebolinha.
+                    <h4>Tamanhos: Pequeno, Medio e Grande (+R$2,60 p/ tamanho)</h4>
+                    </p>
+                    <span>R$ 16,90</span>
+                </div>
+            </div>
+            <div class="item">
+                <div><img class="fotinhaa" src="temakivegetariano.png" alt=""></div>
+                <div class="inform">
+                    <h3>Temaki Vegetariano</h3>
+                    <p>Alface, pepino, cenoura e cream cheese.
+                    <h4>Tamanhos: Pequeno, Medio e Grande (+R$2,60 p/ tamanho)</h4>
+                    </p>
+                    <span>R$ 13,90</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="categoria">
+            <h2>Sobremesas</h2>
+            <div class="item">
+                <div><img class="fotinhaa" src="dorayaki.png" alt=""></div>
+                <div class="inform">
+                    <h3>Dorayaki</h3>
+                    <p>Panqueca Japonesa recheada com chocolate.</p>
+                    <h4>01 un.*</h4>
+                    <span>R$ 11,90</span>
+                </div>
+            </div>
+
+            <div class="item">
+                <div><img class="fotinhaa" src="mochirecheado.png" alt=""></div>
+                <div class="inform">
+                    <h3>Mochi Recheado</h3>
+                    <p>Bolinho de arroz japonês com recheio de morango, chá verde ou chocolate.</p>
+                    <h4>01 un.*</h4>
+                    <span>R$ 9,90</span>
+                </div>
+            </div>
+            <div class="item">
+                <div><img class="fotinhaa" src="tempurasorvete.png" alt=""></div>
+                <div class="inform">
+                    <h3>Tempurá de Sorvete</h3>
+                    <p>Sorvete empanado e frito, servido com calda de chocolate.</p>
+                    <h4>01 un.*</h4>
+                    <span>R$ 10,90</span>
+                </div>
+            </div>
+            <div class="item">
+                <div><img class="fotinhaa" src="harumakibanana.png" alt=""></div>
+                <div class="inform">
+                    <h3>Harumaki Banana c/ Chocolate</h3>
+                    <p>Massa crocante enrolada, recheada com banana com calda de chocolate e sovete.</p>
+                    <h4>06 un.*</h4>
+                    <span>R$ 17,90</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="categoria">
+            <h2>Bebidas</h2>
+            <div class="item">
+                <div class="div"><img class="fotinhaa" src="chaverde.png" alt=""></div>
+                <div class="inform">
+                    <h3>Chá Verde</h3>
+                    <p>Chá gelado tradicional japonês. </p>
+                    <span>R$ 6,00</span>
+                </div>
+            </div>
+            <div class="item">
+                <div><img class="fotinhaa" src="refrigerante.png" alt=""></div>
+                <div class="inform">
+                    <h3>Refrigerante</h3>
+                    <p>Lata 350ml</p>
+                    <span>R$ 6,00</span>
+                </div>
+            </div>
+            <div class="item">
+                <div><img class="fotinhaa" src="agua.png" alt=""></div>
+                <div class="inform">
+                    <h3>Água</h3>
+                    <p>Garrafinha 500ml</p>
+                    <span>R$ 4,00</span>
+                </div>
+            </div>
+        </section>
+        <a href="index.html"><button class="botao_volta">
+                ← Voltar
+            </button></a>
+        <a class="botaoprairpormenino" href="reservas.html"><button class="botao_volta">
+                Faça sua reserva!
+            </button></a>
+    </main>
+
+    <!-- footer -->
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-contacts">
+                <h1>Redes sociais</h1>
+                <p>It's all about your dreams.</p>
+
+                <div class="footer-social-media">
+                    <a href="#" class="footer-link instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" class="footer-link facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" class="footer-link whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div><!-- footer-social-media -->
+
+            </div><!-- footer-contacts -->
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Menu</h3>
+                </li>
+                <li>
+                    <a href="rodizio.html" class="footer-link">Rodízio</a>
+                </li>
+                <li>
+                    <a href="cardapio.html" class="footer-link">Cardápio</a>
+                </li>
+                <li>
+                    <a href="reservas.html" class="footer-link">Reservas</a>
+                </li>
+            </ul><!-- footer-list -->
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Rodizio</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Comida japonesa artesanal</a>
+                </li>
+                <li>
+                    <a href="cardapio.html" class="footer-link">Cardápio</a>
+                </li>
+                <li>
+                    <a href="reservas.html" class="footer-link">Reservas</a>
+                </li>
+            </ul><!-- footer-list -->
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Venha nos visitar !</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Largo das Zebras 85, Humaitá
+                        Rio de Janeiro / RJ – 22260-210</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Google Maps</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Waze</a>
+                </li>
+            </ul><!-- footer-list -->
+        </div>
+    </footer>
+
+</body>
+
+</html>
